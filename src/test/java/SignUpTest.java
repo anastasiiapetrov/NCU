@@ -26,14 +26,12 @@ public class SignUpTest extends BaseTest{
         signUpPage.goToSignUpPage();
         signUpPage.selectStudentRole();
         signUpPage.inputFullName("Martin Slepanek");
-        signUpPage.inputEmail(getRandomEmail());
+        signUpPage.inputEmail(email);
         signUpPage.inputPassword("34rt35t5464");
         signUpPage.clickOnCheckmarkTerms();
         signUpPage.clickOnSignUpButton();
-        sleep(5000);
-     //   homePage.clickOnStudDirectoryButton();
-
-       deleteUserTest.deleteExistingUser(email);
+        homePage.clickOnStudDirectoryButton();
+        deleteUserTest.deleteExistingUser(email);
     }
 
     @Test

@@ -56,6 +56,7 @@ public class SignUpPage {
 
     public void clickOnSignUpButton(){
         signUpButton.click();
+        spinner.shouldNotBe(visible, Duration.ofSeconds(10000));
     }
 
     public void checkErrorMessageShortPassword(String errorTextValue){
@@ -97,6 +98,7 @@ public class SignUpPage {
        inputPassword("34rt35t5464");
        clickOnCheckmarkTerms();
         clickOnSignUpButton();
+        spinner.shouldNotBe(visible, Duration.ofSeconds(10000));
     }
 
     public void registrAsTeacher(String email){

@@ -17,7 +17,7 @@ public class LoginPage {
     private SelenideElement signInButton = $(byId("sw-sign-in-submit-btn"));
     private SelenideElement loginError = $(byClassName("login-error"));
     private SelenideElement forgotPasswordLink = $x("//a[@href='/forgot-password']");
-    private SelenideElement emailInputField = $(byId("forgot-password-email--1161217580"));
+
 
 
     public void enterEmail(String emailValue){

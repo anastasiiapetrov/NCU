@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class AddCoursePage {
-    private SelenideElement headerAddCourse = $(byTagName("h2"));
     private SelenideElement courseNameField = $(byId("course-documents-form-CourseName--1078269106"));
     private SelenideElement facultyField = $(byId("course-documents-form-Faculty-1389247778"));
     private SelenideElement exactFaculty = $x("//li[@data-value='Engineering']");

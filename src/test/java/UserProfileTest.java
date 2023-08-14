@@ -8,7 +8,6 @@ public class UserProfileTest extends BaseTest{
     public void useSamePassWhileChanging(){
         String email = getRandomEmail();
         signUpPage.registrAsStudent(email);
-        sleep(5000);
         homePage.clickOnHPImage();
         homePage.clickOnMyProfileButton();
         userProfilePage.enterOldPass("134235467");
@@ -22,7 +21,6 @@ public class UserProfileTest extends BaseTest{
     public void uploadProfilePhotoAsStudent(){
         String email = getRandomEmail();
         signUpPage.registrAsStudent(email);
-        sleep(5000);
         homePage.clickOnHPImage();
         homePage.clickOnMyProfileButton();
         userProfilePage.uploadPhoto();

@@ -1,5 +1,4 @@
 import com.codeborne.selenide.logevents.SelenideLogger;
-import dto.DeleteUser;
 import io.qameta.allure.selenide.AllureSelenide;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -78,7 +77,6 @@ public class BaseTest {
     TheCoursePage theCoursePage = new TheCoursePage();
     StudentDirectoryPage studentDirectoryPage = new StudentDirectoryPage();
     ProfessorsPage professorsPage = new ProfessorsPage();
-    DeleteUser deleteUser = new DeleteUser();
     DeleteUserTest deleteUserTest = new DeleteUserTest();
 
 

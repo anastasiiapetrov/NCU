@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class AddCourseTest extends BaseTest {
 
     @Test
