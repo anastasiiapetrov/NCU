@@ -26,6 +26,7 @@ public class HomePage {
 
 
 
+
     public void homePageIsOpen(){
         avatar.shouldBe(visible, Duration.ofSeconds(10));
     }

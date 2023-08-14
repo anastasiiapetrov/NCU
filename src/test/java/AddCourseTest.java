@@ -8,7 +8,6 @@ public class AddCourseTest extends BaseTest {
     public void addCourseAsTeacher(){
         String email = getRandomEmail();
         signUpPage.registrAsTeacher(email);
-        sleep(5000);
         homePage.clickOnHPImage();
         homePage.clickOnAddCourseButton();
         addCoursePage.fillInCourseNameField("Machine Learning");

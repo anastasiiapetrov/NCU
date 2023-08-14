@@ -3,11 +3,11 @@ import com.codeborne.selenide.SelenideElement;
 import java.time.Duration;
 import java.util.Random;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 
 public class SignUpPage {
@@ -23,6 +23,7 @@ public class SignUpPage {
     private SelenideElement errorMessageSignUp = $(byClassName("required-errors"));
     private SelenideElement errorMessageExistingUser = $(byClassName("signup-error"));
     private SelenideElement goToSignUpPage = $(byId("sw-go-to-sign-up-btn"));
+    private SelenideElement spinner = $x("//div[@role='status']");
 
 
     public void selectTeacherRole(){
@@ -106,6 +107,7 @@ public class SignUpPage {
         inputPassword("34rt35t5464");
         clickOnCheckmarkTerms();
         clickOnSignUpButton();
+        spinner.shouldNotBe(visible, Duration.ofSeconds(10000));
     }
 
 
